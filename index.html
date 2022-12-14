@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/img/favicon.ico">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./queries.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <title>Youtube</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav-container">
+            <div class="left-side">
+                <label for="checkMenu">
+                    <i class="bi bi-list icon-nav"></i>
+                </label>
+                <img class="logo-youtube" src="./assets/img/youtube-logo.png" alt="logo-youtube">
+                <span>CO</span>
+            </div>
+            <div class="center-side">
+                <div class="input-container">
+                    <input type="text" placeholder="Buscar" />
+                    <div class="magnifying-glass-container">
+                        <i class="magnifying-glass bi bi-search"></i>
+                    </div>
+                </div>
+                <i class="microphone bi bi-mic-fill"></i>
+            </div>
+            <div class="side-right">
+                <i class="bi bi-camera-video icon-nav"></i>
+                <i class="bi bi-bell icon-nav"></i>
+                <img class="profile-logo" src="./assets/img/profile-logo.png" alt="">
+            </div>
+        </nav>
+
+        <!-- SLIDING-BUTTONS  -->
+        <div class="sliding-container">
+            <div class="arrow-container arrow-container-left hidden">
+                <button class="left-arrow">
+                    <i class="bi bi-chevron-left"></i>
+                </button>
+            </div>
+            <div class="sliding-buttons-container">
+                <button class="btn-chip">Todo</button>
+                <button class="btn-chip">Mixes</button>
+                <button class="btn-chip">Música</button>
+                <button class="btn-chip">Fantasma</button>
+                <button class="btn-chip">Historia</button>
+                <button class="btn-chip">En directo</button>
+                <button class="btn-chip">Mago de Oz</button>
+                <button class="btn-chip">Metal sinfónico</button>
+                <button class="btn-chip">Álbumes</button>
+                <button class="btn-chip">Kygo</button>
+                <button class="btn-chip">Videojuegos</button>
+                <button class="btn-chip">Dande pop</button>
+                <button class="btn-chip">Música independiente</button>
+                <button class="btn-chip">Pódcast</button>
+                <button class="btn-chip">Flautas</button>
+                <button class="btn-chip">Wolfgang Amadeus Mozart</button>
+                <button class="btn-chip">Música house</button>
+                <button class="btn-chip">Bossa nova</button>
+                <button class="btn-chip">Subidas recientes</button>
+                <button class="btn-chip">Visto</button>
+                <button class="btn-chip">Novedad para ti</button>
+            </div>
+            <div class="arrow-container arrow-container-rigth">
+                <button class="rigth-arrow">
+                    <i class="bi bi-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- SIDER  -->
+    <sider class="sider-container">
+        <div class="card-img">
+            <i class="bi bi-house-door icon-sider"></i>
+            <span>Inicio</span></a>
+        </div>
+        <div class="card-img">
+            <i class="bi bi-caret-right icon-sider"></i>
+            <span>Shorts</span></a>
+        </div>
+        <div class="card-img">
+            <i class="bi bi-collection-play icon-sider"></i>
+            <span>Suscripciones</span></a>
+        </div>
+        <div class="card-img">
+            <i class="bi bi-play-btn icon-sider"></i>
+            <span>Biblioteca</span></a>
+        </div>
+    </sider>
+
+    <!-- HIDDEN MENU -->
+    <input type="checkbox" id="checkMenu">
+    <div class="modal">
+        <section class="modal-content" id="sideMenu">
+            <div class="modal-menu">
+                <label class="menu-btn" for="checkMenu">
+                    <i class="bi bi-list icon-nav"></i>
+                </label>
+                <img class="logo-youtube" src="./assets/img/youtube-logo.png" alt="logo-youtube">
+                <span>CO</span>
+            </div>
+            <div class="information-guide-container">
+                <section class="home-container">
+                    <div class="info-container">
+                        <i class="bi bi-house-door icon-modal"></i>
+                        <span>Inicio</span>
+                    </div>
+                    <div class="info-container">
+                        <i class="bi bi-caret-right icon-modal"></i>
+                        <span>Shorts</span>
+                    </div>
+                    <div class="info-container line-bottom">
+                        <i class="bi bi-collection-play icon-modal"></i>
+                        <span>Suscripciones</span>
+                    </div>
+                    <div class="line-div"></div>
+                    <div class="info-container">
+                        <i class="bi bi-play-btn icon-modal"></i>
+                        <span>Biblioteca</span>
+                    </div>
+                    <div class="info-container">
+                        <i class="bi bi-arrow-counterclockwise icon-modal"></i>
+                        <span>Historial</span>
+                    </div>
+                    <div class="info-container">
+                        <i class="bi bi-play-btn icon-modal"></i>
+                        <span>Más vídeos</span>
+                    </div>
+                    <div class="info-container">
+                        <i class="bi bi-clock icon-modal"></i>
+                        <span>Ver más tarde</span>
+                    </div>
+                    <div class="info-container">
+                        <i class="bi bi-hand-thumbs-up icon-modal"></i>
+                        <span>Vídeos que me gus...</span>
+                    </div>
+                </section>
+
+                <section class="subscriptions-container">
+                    <div class="title-container">
+                        <span class="title">Suscripciones</span>
+                    </div>
+                    <div class="info-container">
+                        <img class="suscriptions-img" src="./assets/img/channels1_profile.jpg" alt="img-music">
+                        <span>Música</span>
+                    </div>
+                    <div class="info-container">
+                        <img class="suscriptions-img" src="./assets/img/channels2_profile.jpg" alt="img-sports">
+                        <span>Deportes</span>
+                    </div>
+                    <div class="info-container">
+                        <img class="suscriptions-img" src="./assets/img/channels3_profile.jpg" alt="img-video-game">
+                        <span>Videojuegos</span>
+                    </div>
+                    <div class="info-container">
+                        <img class="suscriptions-img" src="./assets/img/channels4_profile.jpg" alt="img-news">
+                        <span>Noticias</span>
+                    </div>
+                </section>
+
+                <section class="explore-container">
+                    <div class="title-container">
+                        <span class="title">Explorar</span>
+                    </div>
+                    <div class="info-container">
+                        <i class="bi bi-droplet icon-modal"></i>
+                        <span>Tendencias</span>
+                    </div>
+                    <div class="info-container">
+                        <i class="bi bi-music-note icon-modal"></i>
+                        <span>Música</span>
+                    </div>
+                    <div class="info-container">
+                        <i class="bi bi-broadcast icon-modal"></i>
+                        <span>En directo</span>
+                    </div>
+                    <div class="info-container">
+                        <i class="bi bi-controller icon-modal"></i>
+                        <span>Videojuegos</span>
+                    </div>
+                    <div class="info-container">
+                        <i class="bi bi-newspaper icon-modal"></i>
+                        <span>Noticias</span>
+                    </div>
+                    <div class="info-container">
+                        <i class="bi bi-trophy icon-modal"></i>
+                        <span>Deportes</span>
+                    </div>
+                    <div class="info-container">
+                        <i class="bi bi-lightbulb icon-modal"></i>
+                        <span>Aprendizaje</span>
+                    </div>
+                </section>
+
+                <section class="more-youtube-container">
+                    <div class="title-container">
+                        <span class="title">Más de YouTube</span>
+                    </div>
+                    <div class="info-container">
+                        <img class="more-youtube-img" src="./assets/img/youtube.png" alt="img-youtube-premium">
+                        <span>YouTube Premium</span>
+                    </div>
+                    <div class="info-container">
+                        <img class="more-youtube-img" src="./assets/img/youtube-creator.png" alt="img-youtube-studio">
+                        <span>Creator Studio</span>
+                    </div>
+                    <div class="info-container">
+                        <img class="more-youtube-img" src="./assets/img/youtube-circle.png" alt="img-youtube-music">
+                        <span>YouTube Music</span>
+                    </div>
+                    <div class="info-container">
+                        <img class="more-youtube-img" src="./assets/img/youtube-kids.png" alt="img-youtube-kids">
+                        <span>YouTube Kids</span>
+                    </div>
+                    <div class="info-container">
+                        <img class="more-youtube-img" src="./assets/img/youtube.png" alt="img-youtube-tv">
+                        <span>YouTube TV</span>
+                    </div>
+                </section>
+
+                <section class="configuration-container">
+                    <div class="info-container">
+                        <i class="bi bi-gear icon-modal"></i>
+                        <span>Configuración</span>
+                    </div>
+                    <div class="info-container">
+                        <i class="bi bi-flag icon-modal"></i>
+                        <span>Historial de denunc...</span>
+                    </div>
+                    <div class="info-container">
+                        <i class="bi bi-question-circle icon-modal"></i>
+                        <span>Ayuda</span>
+                    </div>
+                    <div class="info-container">
+                        <i class="bi bi-info-square icon-modal"></i>
+                        <span>Enviar sugerencias</span>
+                    </div>
+                </section>
+
+                <div class="links-primary">
+                    Información Prensa <br> Derechos de autor Contactar <br> Creadores Publicidad <br>
+                    Desarrolladores
+                </div>
+                <div class="links-secundary">
+                    Términos Privacidad <br> Política y seguridad <br> Cómo funciona YouTube <br> Probar funciones
+                    nuevas
+                </div>
+                <div class="copyright">
+                    <span>© 2022 Google LLC</span>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- MAIN -->
+    <main>
+        <section class="videos-container">
+            <div class="card-container">
+                <img class="video-youtube" src="./assets/img/video-kim-wilde.jpg" alt="video-youtube">
+                <div class="information-container">
+                    <div>
+                        <img src="./assets/img/channel-kim-wilde.jpg" alt="channel-profile">
+                    </div>
+                    <div>
+                        <a href="">
+                            <h4>Kim Wilde - Cambodia</h4>
+                        </a>
+                        <a href=""><span>Kim Wilde 🎵<br> 9,7 M de visualizaciones <br> hace 1 año</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <img class="video-youtube" src="./assets/img/video-bad-boys-blue.jpeg" alt="video-youtube">
+                <div class="information-container">
+                    <div>
+                        <img src="./assets/img/channel-meloman.jpg" alt="channel-profile">
+                    </div>
+                    <div>
+                        <a href="">
+                            <h4>Bad Boys Blue - You're A Woman</h4>
+                        </a>
+                        <a href=""><span>MELOMAN VIDEO ✔<br> 106 M de visualizaciones <br> hace 7 años</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <img class="video-youtube" src="./assets/img/video-septimo-dia.webp" alt="video-youtube">
+                <div class="information-container">
+                    <div>
+                        <img src="./assets/img/channel-septimo-dia.jpg" alt=channel-profile"">
+                    </div>
+                    <div>
+                        <a href="">
+                            <h4>ICBF bajo la lupa: denuncias de presunto matrato</h4>
+                        </a>
+                        <a href=""><span>Séptimo Día ✔<br> 66.733 visualizaciones <br> hace 4 días</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <img class="video-youtube" src="./assets/img/video-stratovarius.jpeg" alt="video-youtube">
+                <div class="information-container">
+                    <div>
+                        <img src="./assets/img/channel-stratovarius.jpg" alt="channel-profile">
+                    </div>
+                    <div>
+                        <a href="">
+                            <h4>Stratovarius - Hunting High and Low</h4>
+                        </a>
+                        <a href=""><span>StratovariusChannel 🎵<br> 9,2 M de visualizaciones <br> hace 12
+                                años</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <img class="video-youtube" src="./assets/img/video-survivor.webp" alt="video-youtube">
+                <div class="information-container">
+                    <div>
+                        <img src="./assets/img/channel-survivor.jpg" alt="channel-profile">
+                    </div>
+                    <div>
+                        <a href="">
+                            <h4>Desperate Dreams</h4>
+                        </a>
+                        <a href=""><span>Survivor Band 🎵<br> 333.979 visualizaciones <br> hace 5 años</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <img class="video-youtube" src="./assets/img/video-kim-wilde.jpg" alt="video-youtube">
+                <div class="information-container">
+                    <div>
+                        <img src="./assets/img/channel-kim-wilde.jpg" alt="channel-profile">
+                    </div>
+                    <div>
+                        <a href="">
+                            <h4>Kim Wilde - Cambodia</h4>
+                        </a>
+                        <a href=""><span>Kim Wilde 🎵<br> 9,7 M de visualizaciones <br> hace 1 año</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <img class="video-youtube" src="./assets/img/video-bad-boys-blue.jpeg" alt="video-youtube">
+                <div class="information-container">
+                    <div>
+                        <img src="./assets/img/channel-meloman.jpg" alt="channel-profile">
+                    </div>
+                    <div>
+                        <a href="">
+                            <h4>Bad Boys Blue - You're A Woman</h4>
+                        </a>
+                        <a href=""><span>MELOMAN VIDEO ✔<br> 106 M de visualizaciones <br> hace 7 años</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <img class="video-youtube" src="./assets/img/video-septimo-dia.webp" alt="video-youtube">
+                <div class="information-container">
+                    <div>
+                        <img src="./assets/img/channel-septimo-dia.jpg" alt=channel-profile"">
+                    </div>
+                    <div>
+                        <a href="">
+                            <h4>ICBF bajo la lupa: denuncias de presunto matrato</h4>
+                        </a>
+                        <a href=""><span>Séptimo Día ✔<br> 66.733 visualizaciones <br> hace 4 días</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <img class="video-youtube" src="./assets/img/video-stratovarius.jpeg" alt="video-youtube">
+                <div class="information-container">
+                    <div>
+                        <img src="./assets/img/channel-stratovarius.jpg" alt="channel-profile">
+                    </div>
+                    <div>
+                        <a href="">
+                            <h4>Stratovarius - Hunting High and Low</h4>
+                        </a>
+                        <a href=""><span>StratovariusChannel 🎵<br> 9,2 M de visualizaciones <br> hace 12
+                                años</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <img class="video-youtube" src="./assets/img/video-survivor.webp" alt="video-youtube">
+                <div class="information-container">
+                    <div>
+                        <img src="./assets/img/channel-survivor.jpg" alt="channel-profile">
+                    </div>
+                    <div>
+                        <a href="">
+                            <h4>Desperate Dreams</h4>
+                        </a>
+                        <a href=""><span>Survivor Band 🎵<br> 333.979 visualizaciones <br> hace 5 años</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <img class="video-youtube" src="./assets/img/video-kim-wilde.jpg" alt="video-youtube">
+                <div class="information-container">
+                    <div>
+                        <img src="./assets/img/channel-kim-wilde.jpg" alt="channel-profile">
+                    </div>
+                    <div>
+                        <a href="">
+                            <h4>Kim Wilde - Cambodia</h4>
+                        </a>
+                        <a href=""><span>Kim Wilde 🎵<br> 9,7 M de visualizaciones <br> hace 1 año</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <img class="video-youtube" src="./assets/img/video-bad-boys-blue.jpeg" alt="video-youtube">
+                <div class="information-container">
+                    <div>
+                        <img src="./assets/img/channel-meloman.jpg" alt="channel-profile">
+                    </div>
+                    <div>
+                        <a href="">
+                            <h4>Bad Boys Blue - You're A Woman</h4>
+                        </a>
+                        <a href=""><span>MELOMAN VIDEO ✔<br> 106 M de visualizaciones <br> hace 7 años</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <img class="video-youtube" src="./assets/img/video-septimo-dia.webp" alt="video-youtube">
+                <div class="information-container">
+                    <div>
+                        <img src="./assets/img/channel-septimo-dia.jpg" alt=channel-profile"">
+                    </div>
+                    <div>
+                        <a href="">
+                            <h4>ICBF bajo la lupa: denuncias de presunto matrato</h4>
+                        </a>
+                        <a href=""><span>Séptimo Día ✔<br> 66.733 visualizaciones <br> hace 4 días</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <img class="video-youtube" src="./assets/img/video-stratovarius.jpeg" alt="video-youtube">
+                <div class="information-container">
+                    <div>
+                        <img src="./assets/img/channel-stratovarius.jpg" alt="channel-profile">
+                    </div>
+                    <div>
+                        <a href="">
+                            <h4>Stratovarius - Hunting High and Low</h4>
+                        </a>
+                        <a href=""><span>StratovariusChannel 🎵<br> 9,2 M de visualizaciones <br> hace 12
+                                años</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <img class="video-youtube" src="./assets/img/video-survivor.webp" alt="video-youtube">
+                <div class="information-container">
+                    <div>
+                        <img src="./assets/img/channel-survivor.jpg" alt="channel-profile">
+                    </div>
+                    <div>
+                        <a href="">
+                            <h4>Desperate Dreams</h4>
+                        </a>
+                        <a href=""><span>Survivor Band 🎵<br> 333.979 visualizaciones <br> hace 5 años</span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
