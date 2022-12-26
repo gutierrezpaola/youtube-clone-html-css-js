@@ -1,7 +1,7 @@
 @media (min-width: 0px) {
     .videos-container {
         grid-template-columns: repeat(1, 1fr);
-        padding: 12px 90px 0 90px;
+        padding: 0 90px 0 90px;
         row-gap: 10px;
     }
 }
@@ -10,7 +10,7 @@
     .videos-container {
         grid-template-columns: repeat(2, 1fr);
         width: 100%;
-        padding: 12px 60px 0 60px;
+        padding: 0 60px 0 60px;
         column-gap: 10px;
         row-gap: 40px;
     }
@@ -55,7 +55,7 @@
     .videos-container {
         grid-template-columns: repeat(3, 1fr);
         width: 100%;
-        padding: 12px 20px 0 20px;
+        padding: 0 20px 0 20px;
         row-gap: 36px;
     }
 
@@ -87,7 +87,7 @@
     .videos-container {
         grid-template-columns: repeat(5, 1fr);
         width: 100%;
-        padding: 12px 20px 0 20px;
+        padding: 0 20px 0 20px;
         row-gap: 30px;
     }
 
